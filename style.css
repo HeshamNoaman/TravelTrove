@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+#searchTrip {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #017577;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.hero-box {
+    padding-top: 20px;
+    color: white;
+    padding: 40px;
+}
+
+.hero-box h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.hero-box p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.btn-full {
+    background-color: #017577;
+    border: 1px solid #017577;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn,
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* about us page */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-card {
+    width: 30%;
+    background-color: #565353;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.team-card img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card span {
+    font-weight: bold;
+}
+
+.team-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.team-card div button {
+    width: 100%;
+}
+
+/* contact us page */
+
+#contact_container{
+    display: flex;
+}
+
+#contactForm {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact_title {
+    align-self: center;
+}
+
+#contactForm div {
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    display: block;
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+
+/* result of search */
+#searchResults {
+    position: absolute;
+    top: 100px; /* Adjust this value based on your design */
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.result-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.result-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.result-card p {
+    color: #666;
+}
+
+.result-card button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #017577;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.result-card button:hover {
+    background-color: #45a049;
+}
+
