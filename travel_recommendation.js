@@ -15,7 +15,7 @@ function clearRecommendation() {
 
 function getRecommendation() {
     // get the search text 
-    const searchText = searchTrip.value.toLowerCase();
+    const searchText = searchTrip.value.trim().toLowerCase();
 
     // search for trip
     fetch('travel_recommendation_api.json')
